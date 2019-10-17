@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:text="SQLite APP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="36dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_name"
+        app:layout_constraintStart_toEndOf="@+id/text_name" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_marks"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:hint="Marks"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_marks"
+        app:layout_constraintStart_toEndOf="@+id/text_marks" />
+
+    <TextView
+        android:id="@+id/text_marks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Marks:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_surname" />
+
+    <TextView
+        android:id="@+id/text_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Surname:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <EditText
+        android:id="@+id/edit_surname"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_surname"
+        app:layout_constraintStart_toEndOf="@+id/text_surname" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Add"
+        app:layout_constraintEnd_toStartOf="@+id/button_data"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_id" />
+
+    <Button
+        android:id="@+id/button_data"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Show Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_add"
+        app:layout_constraintTop_toBottomOf="@+id/edit_id" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:text="Update"
+        app:layout_constraintEnd_toStartOf="@+id/button_delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="53dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="ID:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_marks" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="213dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_id"
+        app:layout_constraintStart_toEndOf="@+id/text_id" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_update"
+        app:layout_constraintTop_toBottomOf="@+id/button_data" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
